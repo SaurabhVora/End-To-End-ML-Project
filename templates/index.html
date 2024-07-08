@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Welcome to Flask app</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Exam Performance Indicator</title>
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .bg-gradient {
+        background: linear-gradient(135deg, black, white);
+      }
+      .content {
+        background: rgba(255, 255, 255, 0.35);
+      }
+    </style>
+  </head>
+  <body class="flex items-center justify-center h-screen bg-gradient">
+    <div
+      class="container max-w-lg p-8 bg-white rounded-lg shadow-md content text-center"
+    >
+      <h1 class="text-3xl font-bold mb-4">
+        Welcome to the Student Exam Performance Indicator
+      </h1>
+      <p class="text-lg mb-4">
+        Predict your exam performance with our easy-to-use tool.
+      </p>
+      <a
+        href="{{ url_for('predict_datapoint') }}"
+        class="w-full p-3 mt-4 text-center text-white bg-blue-500 rounded-md hover:bg-blue-700"
+        >Get Started</a
+      >
+    </div>
+  </body>
 </html>
