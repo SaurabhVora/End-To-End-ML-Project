@@ -20,24 +20,27 @@ To get started with this project, clone the repository and install the required 
 git clone https://github.com/SaurabhVora/End-To-End-Student-Performance-Prediction.git
 cd End-To-End-Student-Performance-Prediction
 pip install -r requirements.txt
+```
 
-Usage
+## Usage
 To run the application, use the following command:
 
-bash
+```bash
 Copy code
 python application.py
+```
 
-
-Project Structure
+## Project Structure
 notebooks/: Contains Jupyter Notebooks for data analysis and model development.
 src/: Source code for data processing and model training.
 templates/: HTML templates for the Flask web application.
 application.py: Main Flask application file.
 requirements.txt: List of required dependencies.
 setup.py: Setup script for the project.
-Contributing
+
+
+## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
 
-License
+#### License
 This project is licensed under the MIT License. See the LICENSE file for details.
